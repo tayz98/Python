@@ -15,7 +15,7 @@ from bs4 import BeautifulSoup
 # Zusammensetzen der Daten in DataFrames
 import pandas as pd
 
-# Übernehmen der URL von Amazon
+# Übernehmen der URL von Ebay Kleinanzeigen
 url = "https://www.ebay-kleinanzeigen.de/s-kiel/surfbretter/k0l663r50"
 
 # Vorgaukeln eines "echten" Browser
