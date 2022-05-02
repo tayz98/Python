@@ -1,0 +1,22 @@
+################
+# Objektbezeichnung
+# Beschreibung 
+# Link zum Objekt
+# Anbieter Kontakt 
+# Bezugstermin
+# exakte Adresse (falls vorhanden)
+# Land 
+# Ort
+# Kaltmiete (Untergrenze), (Obergrenze)
+# Anz. Zimmer 
+# Wohnungsart 
+# Umkreis 
+# Fläche (minFläche), (maxFläche)
+
+https://www.immobilienscout24.de/Suche/ 
++ Land + "/" + Bundesland +"/"+Stadt+"/" + Wohnungsart "?" + "price=" + Untergrenze+"-"+Obergrenze+"&" 
++livingspace="+minFläche +"-" + maxFläche +"&" + "pricetype=rentpermonth&enteredFrom=result_list"
+
+https://www.immobilienscout24.de/Suche/de/schleswig-holstein/kiel/wohnung-mieten?price=300.0-500.0&livingspace=25.0-55.0&pricetype=rentpermonth&enteredFrom=result_list
+
+item_div = soup.find_all('div', class_='result-list-entry__data')
