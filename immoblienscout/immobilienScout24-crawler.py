@@ -47,64 +47,46 @@ for item in jsonData['searchResponseModel']['resultlist.resultlist']['resultlist
         titel.append(titel_temp)
     except KeyError:
         titel.append("")
-
-for item in jsonData['searchResponseModel']['resultlist.resultlist']['resultlistEntries'][0]['resultlistEntry']:
     try:
         kaltmiete_temp=item['attributes'][0]['attribute'][0]['value'].replace('€','').replace('.',',')
         kaltmiete.append(kaltmiete_temp)
     except KeyError:
         kaltmiete.append("")
-
-for item in jsonData['searchResponseModel']['resultlist.resultlist']['resultlistEntries'][0]['resultlistEntry']:
     try:
         fläche_temp=item['attributes'][0]['attribute'][1]['value'].replace('m²', '')
         fläche.append(fläche_temp)
     except KeyError:
         fläche.append("")    
-
-for item in jsonData['searchResponseModel']['resultlist.resultlist']['resultlistEntries'][0]['resultlistEntry']:
     try:
         zimmer_temp=item['attributes'][0]['attribute'][2]['value']
         zimmer.append(zimmer_temp)
     except KeyError:
         zimmer.append("")        
-
-for item in jsonData['searchResponseModel']['resultlist.resultlist']['resultlistEntries'][0]['resultlistEntry']:
     try:
         straße_temp=item['resultlist.realEstate']['address']['street']
         straße.append(straße_temp)
     except KeyError:
         straße.append("")
-
-for item in jsonData['searchResponseModel']['resultlist.resultlist']['resultlistEntries'][0]['resultlistEntry']:
     try:
         hausnummer_temp=item['resultlist.realEstate']['address']['houseNumber']
         hausnummer.append(hausnummer_temp)
     except KeyError:
         hausnummer.append("")
-
-for item in jsonData['searchResponseModel']['resultlist.resultlist']['resultlistEntries'][0]['resultlistEntry']:
     try: 
         postleitzahl_temp=item['resultlist.realEstate']['address']['postcode']
         postleitzahl.append(postleitzahl_temp)
     except KeyError:
         postleitzahl.append("")
-
-for item in jsonData['searchResponseModel']['resultlist.resultlist']['resultlistEntries'][0]['resultlistEntry']:
     try:
         stadt_temp=item['resultlist.realEstate']['address']['city']
         stadt.append(stadt_temp)
     except KeyError:
         stadt.append("")
-
-for item in jsonData['searchResponseModel']['resultlist.resultlist']['resultlistEntries'][0]['resultlistEntry']:
     try:
         stadtviertel_temp=item['resultlist.realEstate']['address']['quarter']
         stadtviertel.append(stadtviertel_temp)
     except KeyError:
         stadtviertel.append("")                   
-
-for item in jsonData['searchResponseModel']['resultlist.resultlist']['resultlistEntries'][0]['resultlistEntry']:
     try:
         ansprechperson_temp_vorname=item['resultlist.realEstate']['contactDetails']['firstname']
     except KeyError:
